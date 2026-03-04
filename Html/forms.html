@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" />
+        <!-- Focus -->
+      </div>
+
+      <!-- Radio buttons -->
+      <div>
+        <p>What language are you learning</p>
+
+        <div>
+          <input type="radio" id="js" name="language" value="js" />
+          <label for="js">JS</label>
+        </div>
+        <div>
+          <input type="radio" id="html" name="language" value="html" />
+          <label for="html">HTML</label>
+        </div>
+        <div>
+          <input type="radio" id="css" name="language" value="css" />
+          <label for="css">CSS</label>
+        </div>
+      </div>
+
+      <!-- Checkbox -->
+      <div>
+        <p>Select your hobbies</p>
+
+        <div>
+          <input type="checkbox" name="hobby" value="tennis" id="tennis" />
+          <label for="tennis">Tennis</label>
+        </div>
+        <div>
+          <input type="checkbox" name="hobby" value="football" id="football" />
+          <label for="football">Football</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="hobby"
+            value="basketball"
+            id="basketball"
+          />
+          <label for="basketball">BasketBall</label>
+        </div>
+      </div>
+      <button type="button">Button</button>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+    <button>Button</button>
+  </body>
+</html>
