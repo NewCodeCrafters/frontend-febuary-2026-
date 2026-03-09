@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;}
+    
+     .first-name {
+        background: black;
+        color: whitesmoke;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        border-width: ;
+     }       
+    </style>
 </head>
 <body>
-    <h1>Here are the Unordered list</h1>
+    <!-- <h1>Here are the Unordered list</h1>
     <p>List of Food</p>
     <ul>
         <li>Rice</li>
@@ -62,6 +74,52 @@
         <li>Benz</li>
         <li>Toyota</li>
         <li>Ford</li>
-    </ol>
+    </ol> -->
+    <table>
+        <tr>
+            <th>List of Food</th>
+        <th>List of Countries</th>
+        <th>List of Animal</th>
+        <th>List of Cars</th>
+        </tr>
+
+       <tr>
+        <td>Rice</td>
+        <td>Nigeria</td>
+        <td></td>
+       </tr>
+    </table>
+
+    <form>
+        <div class="first-name">
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name">
+        </div>
+
+        <div class="second-name">
+            <label for="second-name">Second Name:</label>
+             <input type="text" name="second-name" id="second-name">
+        </div>
+
+        <fieldset class="sex">
+            <legend>Sex</legend>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Female</label>            
+        </fieldset>
+
+        <fieldset class="tribe">
+            <legend>Tribe</legend>
+            <p>What tribe are you?</p>
+            <input type="checkbox" name="tribe" id="yorube" value="yoruba">
+            <label for="yoruba">Yoruba</label>
+
+            <input type="checkbox" name="tribe" id="hausa" value="hausa">
+            <label for="yoruba">Hausa</label>
+        </fieldset>
+       
+    </form>
 </body>
 </html>
