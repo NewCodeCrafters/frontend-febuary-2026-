@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fc9;
+}
+
+h1 {
+    font-size: 50px;
+    /* font-family: 'Bitcount Prop Double Ink', cursive; */
+    color: white;
+    text-align: center;
+    background-color: blue  ;
+    border-radius: 999999999px;
+    /* padding-top: 20%; */
+}
+
+p {
+    font-size: 20px;    
+    color: white;
+    text-align: center;
+    background-color: red;
+}
