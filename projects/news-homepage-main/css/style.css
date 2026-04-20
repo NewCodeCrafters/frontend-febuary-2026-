@@ -40,12 +40,12 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "article article news"
+    "art art news"
     "card-1 card-2 card-3";
   gap: 20px;
 }
 .article {
-  grid-area: article;
+  grid-area: art;
 }
 .article-content {
   display: flex;
@@ -147,4 +147,54 @@ li {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+@media (max-width: 1009px) {
+  .container {
+    padding: 20px;
+  }
+
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "art art"
+      "news news"
+      "card-1 card-2"
+      "card-3 .";
+    gap: 20px;
+  }
+}
+
+@media (max-width: 652px) {
+  .container {
+    padding: 10px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-content {
+    flex-direction: column;
+  }
+  .article-desc {
+    width: 100%;
+    max-width: none;
+    font-size: 0.9rem;
+  }
+  .article-title {
+    max-width: none;
+    font-size: 2rem;
+  }
+  .link-list {
+    display: none;
+  }
+  .new-title {
+    font-size: 2rem;
+  }
+  .article-card-content {
+    gap: 0px;
+  }
+  .article-card {
+    align-items: center;
+  }
 }
