@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* html {
+  font-size: 16px;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  /* width: 600px; */
+  /* 50/100 * 600 = 1/2 * 600 = 300 */
+  /* vh = viewport height */
+  /* 100vh = 100% vh */
+  /* vw = viewport width */
+  /* 100vw = 100% vw */
+}
+.box {
+  /* width: 50%; */
+  width: 80vw;
+  height: 20vh;
+  background-color: red;
+  /* font-size: 30px; */
+}
+
+.title {
+  /* 1em = font size of the element or its ancestors */
+  /* 1rem = font size of the html element*/
+
+  /* 10 * 20 = 200px */
+  /* font-size: 20px; */
+  /* 1em = 30px */
+  /* width: 10em;
+  padding: 2em; */
+  font-size: 2em;
+  width: 10rem;
+  padding: 3rem;
+  background-color: blue;
+}
+
+/* When you use em in @rules, 1em = font size of the html element */
+@media (max-width: 43.75em) {
+  .box {
+    background-color: purple;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+}
