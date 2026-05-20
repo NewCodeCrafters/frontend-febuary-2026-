@@ -156,3 +156,7 @@ a {
 .gallery-design .about-bg-desc {
   color: hsl(167, 40%, 24%);
 }
+
+img {
+  max-width: 100%;
+}
