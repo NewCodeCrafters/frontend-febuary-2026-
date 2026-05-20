@@ -71,3 +71,88 @@ a {
   letter-spacing: 5px;
   font-weight: 900;
 }
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* img {
+  max-width: 100%;
+} */
+
+.about-content-container {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-content-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content-title {
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+  color: hsl(212, 27%, 19%);
+  /* width: 500px; */
+  max-width: 417px;
+}
+
+.about-content-desc {
+  max-width: 400px;
+  font-size: 1rem;
+  color: hsl(210, 4%, 67%);
+  line-height: 1.6;
+}
+
+.about-content-link {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.about-bg-container {
+  /* background-image: url(images/desktop/image-graphic-design.jpg);
+  background-size: cover; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.about-bg-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.about-bg-desc {
+  max-width: 350px;
+  line-height: 1.7;
+  text-align: center;
+}
+.about-gallery {
+  position: relative;
+}
+
+.photography .about-bg-title,
+.photography .about-bg-desc {
+  color: hsl(198, 62%, 26%);
+}
+.gallery-design .about-bg-title,
+.gallery-design .about-bg-desc {
+  color: hsl(167, 40%, 24%);
+}
