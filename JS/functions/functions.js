@@ -93,7 +93,9 @@ function calculateTip(bill, tipPercent) {
 }
 
 let totalTip = calculateTip(200, 5);
-console.log(totalTip);
+// console.log(typeof `${totalTip}`);
+// console.log(totalTip);
+// console.log(totalTip.toString());
 /**
  *
  * 1) Calculate Tip based on percentage (5%, 15% etc) calculateTip
