@@ -12,7 +12,6 @@ class Student {
     this.name = name;
     this.subjects = subjects;
   }
-
   //   calculateGrade() {
   //     let totalScore = 0;
 
