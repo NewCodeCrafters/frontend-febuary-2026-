@@ -17,6 +17,12 @@ img {
   padding-block: 80px;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -148,7 +154,10 @@ li {
   flex-direction: column;
   gap: 14px;
 }
-
+.close-btn,
+.open-btn {
+  display: none;
+}
 @media (max-width: 1009px) {
   .container {
     padding: 20px;
@@ -176,6 +185,7 @@ li {
   .article-content {
     flex-direction: column;
   }
+
   .article-desc {
     width: 100%;
     max-width: none;
@@ -185,8 +195,48 @@ li {
     max-width: none;
     font-size: 2rem;
   }
-  .link-list {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100svw;
+    height: 100svh;
+  }
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60svw;
+    height: 100svh;
+    background-color: hsl(36, 100%, 99%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    /* transition: transform 50ms ease-in-out; */
+  }
+  .close-btn,
+  .open-btn {
+    display: block;
+  }
+  .overlay.hide {
     display: none;
+  }
+  .nav-container.hide {
+    transform: translateX(100svw);
+  }
+  .link-list {
+    flex-direction: column;
+  }
+  .close-btn {
+    align-self: flex-end;
+  }
+  .link-item {
+    font-size: 1.4rem;
+  }
+  .link-item a {
+    color: hsl(240, 100%, 5%);
   }
   .new-title {
     font-size: 2rem;
