@@ -98,15 +98,42 @@ function getPostsForUser(user) {
   return posts.filter((post) => post.userId == user.id);
 }
 
-getUser(2)
-  // .then((user) => getPostsForUser(user))
-  .then(getPostsForUser)
-  .then((post) => {
-    console.log(post);
-    return post.map((post) => post.message);
-  })
-  .then((postTitles) => {
-    console.log(postTitles);
-    console.log(postTitles.length);
-  })
-  .catch((error) => console.error(error));
+// getUser(2)
+//   // .then((user) => getPostsForUser(user))
+//   .then(getPostsForUser)
+//   .then((post) => {
+//     console.log(post);
+//     return post.map((post) => post.message);
+//   })
+//   .then((postTitles) => {
+//     console.log(postTitles);
+//     console.log(postTitles.length);
+//   })
+//   .catch((error) => console.error(error));
+
+// async function getPostsForUser2(userId) {
+//   //  getUser(userId)
+//   //   .then(getPostsForUser)
+//   //   .then((post) => {
+//   //     console.log(post);
+//   //     return post.map((post) => post.message);
+//   //   })
+//   //   .then((postTitles) => {
+//   //     console.log(postTitles);
+//   //     console.log(postTitles.length);
+//   //   })
+//   //   .catch((error) => console.error(error));
+
+//   try {
+//     const user = await getUser(userId);
+
+//     const usersPost = getPostsForUser(user);
+//     const postTitles = usersPost.map((post) => post.message);
+//     console.log(postTitles);
+//   } catch (error) {
+//     console.log("Error from post");
+//     console.error(error);
+//   }
+// }
+
+// getPostsForUser2(1);
