@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+img {
+  max-width: 100%;
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+.card {
+  padding: 50px 39px;
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 24%);
+  width: 100%;
+  max-width: 461px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+.title {
+  color: hsl(150, 100%, 66%);
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.desc {
+  font-size: clamp(0.9rem, 8vw, 1.5rem);
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.btn {
+  padding: 20px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999999px;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -30px;
+  transition: box-shadow 700ms ease-in-out;
+  /* top: -30px;
+  left: -30px;
+  right: -30px; */
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 42px 6px hsl(150, 100%, 66%);
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+  }
+}
