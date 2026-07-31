@@ -125,6 +125,84 @@ const warrior: Character = {
 const heroes: Character[] = [warrior, hero];
 
 console.log(heroes);
-// const archer: NewCharacter = {
 
-// }
+// Assignment solution
+
+type BookGenre = "Fiction" | "Science" | "History" | "Biography" | "Fantasy";
+type BookFormat = "Physical" | "Digital";
+interface Book {
+  id: number;
+  title: string;
+  author: string;
+  genre: BookGenre;
+  available: boolean;
+}
+
+type MembershipType = "Student" | "Teacher" | "Public";
+type Fine = number | null;
+
+interface Person {
+  name: string;
+  email: string;
+}
+
+interface LibraryMember {
+  id: number;
+  borrowedBooks: Book[];
+  type: MembershipType;
+  fine: Fine;
+}
+type Member = Person & LibraryMember;
+
+type TransactionStatus = "Borrowed" | "Returned" | "Overdue";
+interface Transaction {
+  member: Member;
+  book: Book;
+  borrowDate: string;
+  returnDate: string;
+  status: TransactionStatus;
+}
+
+const books: Book[] = [
+  {
+    id: 1,
+    title: "The hobbit",
+    author: "Unknown",
+    available: true,
+    genre: "Fiction",
+  },
+  {
+    id: 2,
+    title: "Clean code",
+    author: "Unknown",
+    available: true,
+    genre: "Science",
+  },
+];
+const gideon: Member = {
+  borrowedBooks: [],
+  email: "mail",
+  fine: null,
+  id: 1,
+  name: "Gideon",
+  type: "Public",
+};
+
+const transactions: Transaction[] = [];
+
+gideon.borrowedBooks.push(books[0]);
+
+books[0].available = false;
+
+transactions.push({
+  book: books[0],
+  borrowDate: new Date().toDateString(),
+  returnDate: "",
+  member: gideon,
+  status: "Borrowed",
+});
+
+books[0].title = "Just testing";
+console.log(books);
+console.log(gideon);
+console.log(transactions);
